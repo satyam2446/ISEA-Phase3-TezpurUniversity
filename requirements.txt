@@ -1,0 +1,10 @@
+# Assignment 6 - GUI-Based Multi-Client Chat Application Using TCP
+# Python 3.9+ recommended (tkinter ships with the standard CPython installer
+# on Windows/macOS; on Linux install it via your package manager, see README).
+
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# The following are part of the Python standard library and do NOT need to
+# be installed separately, but are listed here for documentation purposes:
+#   socket, threading, json, csv, logging, argparse, queue, tkinter, datetime

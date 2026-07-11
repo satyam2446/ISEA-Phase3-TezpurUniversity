@@ -1,0 +1,136 @@
+2026-07-10 18:01:55 | INFO     | MainThread      | Chat server listening on 0.0.0.0:55555
+2026-07-10 18:02:11 | INFO     | Client-127.0.0.1:51422 | New connection from ('127.0.0.1', 51422)
+2026-07-10 18:02:11 | INFO     | Client-127.0.0.1:51422 | User authenticated: alice from ('127.0.0.1', 51422)
+2026-07-10 18:02:34 | INFO     | Client-127.0.0.1:51430 | New connection from ('127.0.0.1', 51430)
+2026-07-10 18:02:34 | INFO     | Client-127.0.0.1:51430 | User authenticated: bob from ('127.0.0.1', 51430)
+2026-07-10 18:02:50 | DEBUG    | Client-127.0.0.1:51422 | [BROADCAST] alice: Hey everyone, is the server working well today?
+2026-07-10 18:03:02 | DEBUG    | Client-127.0.0.1:51430 | [BROADCAST] bob: Yes! Connection looks stable on my end.
+2026-07-10 18:03:20 | INFO     | Client-127.0.0.1:51441 | New connection from ('127.0.0.1', 51441)
+2026-07-10 18:03:20 | INFO     | Client-127.0.0.1:51441 | User authenticated: charlie from ('127.0.0.1', 51441)
+2026-07-10 18:03:35 | DEBUG    | Client-127.0.0.1:51441 | [BROADCAST] charlie: Hello alice and bob, joining the test now.
+2026-07-10 18:03:41 | WARNING  | Client-127.0.0.1:51452 | Duplicate username rejected: alice from ('127.0.0.1', 51452)
+2026-07-10 18:04:02 | DEBUG    | Client-127.0.0.1:51422 | [PRIVATE] alice -> bob: Can you check the /list command for me?
+2026-07-10 18:04:10 | DEBUG    | Client-127.0.0.1:51430 | [PRIVATE] bob -> alice: Sure, running it now - looks good.
+2026-07-10 18:04:44 | DEBUG    | Client-127.0.0.1:51441 | [BROADCAST] charlie: Testing broadcast latency measurement.
+2026-07-10 18:05:12 | DEBUG    | Client-127.0.0.1:51422 | [PRIVATE] alice -> charlie: Great, let's start the Wireshark capture.
+2026-07-10 18:05:40 | INFO     | Client-127.0.0.1:51441 | User disconnected: charlie
+2026-07-10 18:06:01 | DEBUG    | Client-127.0.0.1:51430 | [BROADCAST] bob: charlie disconnected, continuing the test with 2 clients.
+2026-07-10 18:06:45 | INFO     | Client-127.0.0.1:51430 | User disconnected: bob
+2026-07-10 18:07:00 | DEBUG    | Client-127.0.0.1:51422 | [BROADCAST] alice: Wrapping up the session, thanks everyone.
+2026-07-10 18:07:10 | INFO     | Client-127.0.0.1:51422 | User disconnected: alice
+2026-07-10 18:07:10 | INFO     | MainThread      | Periodic stats: {'uptime_sec': 315.42, 'total_connections': 4, 'current_connections': 0, 'broadcast_count': 6, 'private_count': 3, 'auth_failures': 1, 'total_bytes_received': 4128}
+2026-07-10 18:07:12 | INFO     | MainThread      | Server shutdown complete.
+2026-07-11 03:28:02,485 | INFO     | MainThread      | Chat server listening on 0.0.0.0:55555
+2026-07-11 03:29:07,645 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 65.16, 'total_connections': 0, 'current_connections': 0, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 0}
+2026-07-11 03:30:13,034 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 130.55, 'total_connections': 0, 'current_connections': 0, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 0}
+2026-07-11 03:31:18,309 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 195.82, 'total_connections': 0, 'current_connections': 0, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 0}
+2026-07-11 03:31:52,803 | INFO     | Client-127.0.0.1:40954 | New connection from ('127.0.0.1', 40954)
+2026-07-11 03:31:52,825 | INFO     | Client-127.0.0.1:40954 | User authenticated: satyam from ('127.0.0.1', 40954)
+2026-07-11 03:32:23,676 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 261.19, 'total_connections': 1, 'current_connections': 1, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 89}
+2026-07-11 03:32:57,193 | INFO     | Client-127.0.0.1:40954 | User disconnected: satyam
+2026-07-11 03:33:24,593 | INFO     | MainThread      | Server shutdown complete.
+2026-07-11 03:33:24,593 | INFO     | MainThread      | 
+==================== SERVER STATISTICS ====================
+ Uptime                : 322.11 seconds
+ Total connections     : 1
+ Currently connected   : 0
+ Broadcast messages    : 0
+ Private messages      : 0
+ Auth failures         : 0
+ Total bytes received  : 89
+============================================================
+
+2026-07-11 15:03:03,101 | INFO     | MainThread      | Chat server listening on 0.0.0.0:55555
+2026-07-11 15:04:09,023 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 65.92, 'total_connections': 0, 'current_connections': 0, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 0}
+2026-07-11 15:05:06,842 | INFO     | Client-127.0.0.1:33306 | New connection from ('127.0.0.1', 33306)
+2026-07-11 15:05:06,881 | INFO     | Client-127.0.0.1:33306 | User authenticated: Satyam from ('127.0.0.1', 33306)
+2026-07-11 15:05:14,878 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 131.78, 'total_connections': 1, 'current_connections': 1, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 91}
+2026-07-11 15:06:10,762 | INFO     | Client-127.0.0.1:58014 | New connection from ('127.0.0.1', 58014)
+2026-07-11 15:06:10,768 | INFO     | Client-127.0.0.1:58014 | User authenticated: raj from ('127.0.0.1', 58014)
+2026-07-11 15:06:21,039 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 197.94, 'total_connections': 2, 'current_connections': 2, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 196}
+2026-07-11 15:07:01,904 | INFO     | Client-127.0.0.1:43480 | New connection from ('127.0.0.1', 43480)
+2026-07-11 15:07:01,909 | INFO     | Client-127.0.0.1:43480 | User authenticated: Ganesh from ('127.0.0.1', 43480)
+2026-07-11 15:07:28,507 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 265.41, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 321}
+2026-07-11 15:08:35,653 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 332.55, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 321}
+2026-07-11 15:09:39,241 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 396.14, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 321}
+2026-07-11 15:10:46,380 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 463.28, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 321}
+2026-07-11 15:11:53,640 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 530.54, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 321}
+2026-07-11 15:13:00,819 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 597.72, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 321}
+2026-07-11 15:14:07,513 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 664.41, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 321}
+2026-07-11 15:15:14,691 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 731.59, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 321}
+2026-07-11 15:15:36,210 | DEBUG    | Client-127.0.0.1:58014 | [BROADCAST] raj: hello
+2026-07-11 15:15:50,512 | DEBUG    | Client-127.0.0.1:33306 | [PRIVATE] Satyam -> Ganesh: hello
+2026-07-11 15:15:59,814 | DEBUG    | Client-127.0.0.1:33306 | [BROADCAST] Satyam: hello
+2026-07-11 15:16:07,367 | DEBUG    | Client-127.0.0.1:43480 | [BROADCAST] Ganesh: hello
+2026-07-11 15:16:21,871 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 798.77, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 3, 'private_count': 1, 'auth_failures': 0, 'total_bytes_received': 485}
+2026-07-11 15:17:25,458 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 862.36, 'total_connections': 3, 'current_connections': 3, 'broadcast_count': 3, 'private_count': 1, 'auth_failures': 0, 'total_bytes_received': 485}
+2026-07-11 15:18:20,464 | INFO     | Client-127.0.0.1:58014 | User raj requested disconnect
+2026-07-11 15:18:20,468 | INFO     | Client-127.0.0.1:58014 | User disconnected: raj
+2026-07-11 15:18:24,092 | INFO     | Client-127.0.0.1:33306 | User Satyam requested disconnect
+2026-07-11 15:18:24,096 | INFO     | Client-127.0.0.1:33306 | User disconnected: Satyam
+2026-07-11 15:18:32,614 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 929.51, 'total_connections': 3, 'current_connections': 1, 'broadcast_count': 3, 'private_count': 1, 'auth_failures': 0, 'total_bytes_received': 599}
+2026-07-11 15:19:07,745 | INFO     | Client-127.0.0.1:43480 | User Ganesh requested disconnect
+2026-07-11 15:19:07,749 | INFO     | Client-127.0.0.1:43480 | User disconnected: Ganesh
+2026-07-11 15:19:39,743 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 996.64, 'total_connections': 3, 'current_connections': 0, 'broadcast_count': 3, 'private_count': 1, 'auth_failures': 0, 'total_bytes_received': 622}
+2026-07-11 15:20:10,738 | INFO     | MainThread      | Server shutdown complete.
+2026-07-11 15:20:10,739 | INFO     | MainThread      | 
+==================== SERVER STATISTICS ====================
+ Uptime                : 1027.64 seconds
+ Total connections     : 3
+ Currently connected   : 0
+ Broadcast messages    : 3
+ Private messages      : 1
+ Auth failures         : 0
+ Total bytes received  : 622
+============================================================
+
+2026-07-11 15:20:57,745 | INFO     | MainThread      | Chat server listening on 0.0.0.0:55555
+2026-07-11 15:20:59,862 | INFO     | MainThread      | Server shutdown complete.
+2026-07-11 15:20:59,862 | INFO     | MainThread      | 
+==================== SERVER STATISTICS ====================
+ Uptime                : 2.12 seconds
+ Total connections     : 0
+ Currently connected   : 0
+ Broadcast messages    : 0
+ Private messages      : 0
+ Auth failures         : 0
+ Total bytes received  : 0
+============================================================
+
+2026-07-11 15:23:23,387 | INFO     | MainThread      | Chat server listening on 0.0.0.0:55555
+2026-07-11 15:23:49,685 | INFO     | Client-127.0.0.1:40800 | New connection from ('127.0.0.1', 40800)
+2026-07-11 15:23:49,692 | INFO     | Client-127.0.0.1:40800 | User authenticated: satyam from ('127.0.0.1', 40800)
+2026-07-11 15:24:30,636 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 67.25, 'total_connections': 1, 'current_connections': 1, 'broadcast_count': 0, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 89}
+2026-07-11 15:25:00,351 | INFO     | Client-127.0.0.1:51730 | New connection from ('127.0.0.1', 51730)
+2026-07-11 15:25:00,358 | INFO     | Client-127.0.0.1:51730 | User authenticated: adesh from ('127.0.0.1', 51730)
+2026-07-11 15:25:11,498 | DEBUG    | Client-127.0.0.1:51730 | [BROADCAST] adesh: hello
+2026-07-11 15:25:37,820 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 134.43, 'total_connections': 2, 'current_connections': 2, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 231}
+2026-07-11 15:26:24,677 | INFO     | Client-127.0.0.1:51730 | User adesh requested disconnect
+2026-07-11 15:26:24,682 | INFO     | Client-127.0.0.1:51730 | User disconnected: adesh
+2026-07-11 15:26:27,332 | INFO     | Client-127.0.0.1:40800 | User satyam requested disconnect
+2026-07-11 15:26:27,336 | INFO     | Client-127.0.0.1:40800 | User disconnected: satyam
+2026-07-11 15:26:45,028 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 201.64, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:27:52,206 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 268.82, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:28:59,386 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 336.0, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:30:06,558 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 403.17, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:31:10,141 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 466.75, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:32:17,118 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 533.73, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:33:24,115 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 600.73, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:34:31,317 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 667.93, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:35:38,439 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 735.05, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:36:45,616 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 802.23, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:37:52,869 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 869.48, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:38:56,467 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 933.08, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:40:03,630 | INFO     | StatsLogger     | Periodic stats: {'uptime_sec': 1000.24, 'total_connections': 2, 'current_connections': 0, 'broadcast_count': 1, 'private_count': 0, 'auth_failures': 0, 'total_bytes_received': 294}
+2026-07-11 15:41:01,876 | INFO     | MainThread      | Server shutdown complete.
+2026-07-11 15:41:01,877 | INFO     | MainThread      | 
+==================== SERVER STATISTICS ====================
+ Uptime                : 1058.49 seconds
+ Total connections     : 2
+ Currently connected   : 0
+ Broadcast messages    : 1
+ Private messages      : 0
+ Auth failures         : 0
+ Total bytes received  : 294
+============================================================
+

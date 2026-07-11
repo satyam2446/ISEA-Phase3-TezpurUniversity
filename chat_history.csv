@@ -1,0 +1,33 @@
+timestamp,sender,receiver,message_type,message
+2026-07-10 18:02:11,SERVER,ALL,JOIN,alice has joined the chat.
+2026-07-10 18:02:34,SERVER,ALL,JOIN,bob has joined the chat.
+2026-07-10 18:02:50,alice,ALL,BROADCAST,"Hey everyone, is the server working well today?"
+2026-07-10 18:03:02,bob,ALL,BROADCAST,Yes! Connection looks stable on my end.
+2026-07-10 18:03:20,SERVER,ALL,JOIN,charlie has joined the chat.
+2026-07-10 18:03:35,charlie,ALL,BROADCAST,"Hello alice and bob, joining the test now."
+2026-07-10 18:04:02,alice,bob,PRIVATE,Can you check the /list command for me?
+2026-07-10 18:04:10,bob,alice,PRIVATE,"Sure, running it now - looks good."
+2026-07-10 18:04:44,charlie,ALL,BROADCAST,Testing broadcast latency measurement.
+2026-07-10 18:05:12,alice,charlie,PRIVATE,"Great, let's start the Wireshark capture."
+2026-07-10 18:05:40,SERVER,ALL,LEAVE,charlie has left the chat.
+2026-07-10 18:06:01,bob,ALL,BROADCAST,"charlie disconnected, continuing the test with 2 clients."
+2026-07-10 18:06:45,SERVER,ALL,LEAVE,bob has left the chat.
+2026-07-10 18:07:00,alice,ALL,BROADCAST,"Wrapping up the session, thanks everyone."
+2026-07-10 18:07:10,SERVER,ALL,LEAVE,alice has left the chat.
+2026-07-11 03:31:52,SERVER,ALL,JOIN,satyam has joined the chat.
+2026-07-11 03:32:57,SERVER,ALL,LEAVE,satyam has left the chat.
+2026-07-11 15:05:06,SERVER,ALL,JOIN,Satyam has joined the chat.
+2026-07-11 15:06:10,SERVER,ALL,JOIN,raj has joined the chat.
+2026-07-11 15:07:01,SERVER,ALL,JOIN,Ganesh has joined the chat.
+2026-07-11 15:15:36,raj,ALL,BROADCAST,hello
+2026-07-11 15:15:50,Satyam,Ganesh,PRIVATE,hello
+2026-07-11 15:15:59,Satyam,ALL,BROADCAST,hello
+2026-07-11 15:16:07,Ganesh,ALL,BROADCAST,hello
+2026-07-11 15:18:20,SERVER,ALL,LEAVE,raj has left the chat.
+2026-07-11 15:18:24,SERVER,ALL,LEAVE,Satyam has left the chat.
+2026-07-11 15:19:07,SERVER,ALL,LEAVE,Ganesh has left the chat.
+2026-07-11 15:23:49,SERVER,ALL,JOIN,satyam has joined the chat.
+2026-07-11 15:25:00,SERVER,ALL,JOIN,adesh has joined the chat.
+2026-07-11 15:25:11,adesh,ALL,BROADCAST,hello
+2026-07-11 15:26:24,SERVER,ALL,LEAVE,adesh has left the chat.
+2026-07-11 15:26:27,SERVER,ALL,LEAVE,satyam has left the chat.
